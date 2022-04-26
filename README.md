@@ -1,6 +1,6 @@
 
 # password-vault
-Password vault written in Python, using SQLite (sqlite3) for local database.
+Password vault written in Python, using SQLite (sqlite3) for local database `passwords.db`.
 The script expects database with a single table, in the form:
 
 `CREATE TABLE websites (website TEXT PRIMARY KEY, username TEXT NOT NULL, password BLOB NOT NULL)`
