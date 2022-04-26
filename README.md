@@ -8,7 +8,8 @@ The script expects database with a single table, in the form:
 `INSERT INTO websites VALUES("site","username",urlsafe_b64_encoded_password)`
 
 
-Necessary imports (aside from sqlite3, you'll need to install command line tools from https://www.sqlite.org/download.html)\
+Necessary imports (aside from sqlite3, you'll need to install command line tools from https://www.sqlite.org/download.html):
+
 `$pip install pandas`\
 `$pip install cryptography`
 
