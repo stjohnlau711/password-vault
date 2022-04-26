@@ -1,13 +1,15 @@
+
 # password-vault
 Password vault written in Python, using SQLite (sqlite3) for local database.
 The script expects database with a single table, in the form:
 
 `CREATE TABLE websites (website TEXT PRIMARY KEY, username TEXT NOT NULL, password BLOB NOT NULL)`
+
 `INSERT INTO websites VALUES("site","username",urlsafe_b64_encoded_password)`
 
 
-Necessary imports (aside from sqlite3, you'll need to install command line tools from https://www.sqlite.org/download.html):
-`$pip install pandas`
+Necessary imports (aside from sqlite3, you'll need to install command line tools from https://www.sqlite.org/download.html):\
+`$pip install pandas`\
 `$pip install cryptography`
 
 # PROTOTYPE ONLY, NOT ACTUALLY SECURE
