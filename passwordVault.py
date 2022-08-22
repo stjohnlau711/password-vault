@@ -13,8 +13,11 @@ cur = conn.cursor()
 m = hashlib.sha256()
 
 def quickExit(entry): #helper method for checking if user made an input mistake
-    if entry.lower() == 'q':
-        return True
+
+    if isinstance(entry, str):
+    
+        if entry.lower() == 'q':
+            return True
     
     return False
 
